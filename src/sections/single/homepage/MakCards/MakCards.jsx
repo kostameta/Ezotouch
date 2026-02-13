@@ -65,7 +65,7 @@ export default () => {
             практик и вдохновляющей работы с cобой
           </Card>
         </div>
-        <Button className="btn-primary list-cards__btn">
+        <Button href="/deck-type/taro" className="btn-primary list-cards__btn">
           Посмотреть другие колоды
         </Button>
       </div>

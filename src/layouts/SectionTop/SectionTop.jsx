@@ -11,7 +11,7 @@ export default (props) => {
       <div className="section-top__right">
         <p className="section-top__text text-2">{children}</p>
         {btn && (
-          <Button href="/" className="btn-primary section-top__btn">
+          <Button href="/deck-type/taro" className="btn-primary section-top__btn">
             {btn}
           </Button>
         )}
