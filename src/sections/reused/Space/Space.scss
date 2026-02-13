@@ -27,8 +27,7 @@
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    background: url('/src/assets/images/homepage/big-ellipse.svg') no-repeat
-      center / cover;
+    background: url('/src/assets/images/homepage/big-ellipse.svg') no-repeat center / cover;
   }
 
   &__list {
@@ -40,6 +39,10 @@
       overflow: visible;
     }
 
+    &.swiper.swiper-backface-hidden {
+      overflow: visible;
+    }
+
     .swiper-wrapper {
       position: static;
     }
@@ -47,6 +50,13 @@
     .swiper-pagination {
       display: none;
     }
+  }
+
+  // Более специфичный селектор для переопределения стилей Swiper CDN
+  // Используем селектор с родительским классом для большей специфичности
+  & &__list.swiper,
+  & &__list.swiper.swiper-backface-hidden {
+    overflow: visible;
   }
 
   &__card {
@@ -63,6 +73,7 @@
       object-fit: contain;
       transition: all 0.9s ease;
       filter: drop-shadow(0 4px 25px rgba(158, 99, 43, 0.11));
+
       @include hover {
         transform: scale(1.01);
         filter: drop-shadow(0 6px 35px rgba(158, 99, 43, 0.2));
@@ -86,6 +97,7 @@
     @include flex-column;
     gap: 24px;
     align-items: center;
+
     &-circ {
       position: absolute;
       margin: auto;
@@ -94,19 +106,21 @@
       z-index: 1;
       transform: translate(-50%, -50%);
       @include square(920px);
-      background: url('/src/assets/images/homepage/small-ellipse.svg') no-repeat
-        center / cover;
+      background: url('/src/assets/images/homepage/small-ellipse.svg') no-repeat center / cover;
     }
   }
+
   &__mid {
     @include flex-column;
     gap: 16px;
   }
+
   &__action {
     @include flex-column;
     gap: 12px;
     max-width: 340px;
     width: 100%;
+
     .btn {
       width: 100%;
     }
@@ -143,6 +157,17 @@
         overflow: hidden;
       }
 
+      &.swiper.swiper-backface-hidden {
+        overflow: hidden;
+        .space__card.swiper-slide {
+          transform: translateZ(0);
+        }
+
+        .space__card.swiper-slide-active {
+          transform: translateY(60px) translateZ(0);
+        }
+      }
+
       .swiper-wrapper {
         display: flex;
         position: relative;
@@ -164,10 +189,11 @@
         justify-content: center;
         align-items: center;
         transition: transform 0.3s ease;
+        transform: translateZ(0);
       }
 
       &.swiper-slide-active {
-        transform: translateY(60px);
+        transform: translateY(60px) translateZ(0);
       }
     }
 
@@ -197,11 +223,18 @@
 
       &.swiper-slide {
         width: 264px;
+        transform: translateZ(0);
       }
 
       &.swiper-slide-active {
-        transform: translateY(60px);
+        transform: translateY(60px) translateZ(0);
       }
     }
+  }
+
+  // Самый специфичный селектор в конце для переопределения стилей Swiper CDN
+  .space__list.swiper,
+  .space__list.swiper.swiper-backface-hidden {
+    overflow: visible;
   }
 }
