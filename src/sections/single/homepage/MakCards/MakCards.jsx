@@ -48,22 +48,54 @@ export default () => {
               />
             </svg>
           </div>
-          <Card title="МАК универсальные" img="moon" origin>
-            Универсальная колода без слов для самопомощи, глубинной терапии и
-            интуитивной практики
-          </Card>
-          <Card title="МАК Штрихи Вселенной" img="space">
-            Универсальный набор для интуитивной практики, работы с чувствами и
-            внутренними состояниями.
-          </Card>
-          <Card title="МАК Твоя интуиция" img="you">
-            Универсальная колода для самопомощи, диагностики эмоций, и глубокого
-            диалога с собой.
-          </Card>
-          <Card title="МАК Пять измерений" img="five">
-            Колода созданная для интуитивной самодиагностики, психологических
-            практик и вдохновляющей работы с cобой
-          </Card>
+          <div className="list-cards__slider">
+            <div className="list-cards__swiper swiper mak" data-list-cards>
+              <div className="swiper-wrapper">
+            <div className="swiper-slide">
+              <Card title="МАК Пять измерений" img="five">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="МАК универсальные" img="moon" origin>
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="МАК Твоя интуиция" img="you">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="МАК Женская сила" img="space">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="МАК Письма к себе" img="five">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="МАК Выход из лабиринта" img="space">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="МАК Звёздный Компас" img="you">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+              </div>
+            </div>
+          </div>
         </div>
         <Button href="/deck-type/taro" className="btn-primary list-cards__btn">
           Посмотреть другие колоды

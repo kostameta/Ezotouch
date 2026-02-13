@@ -39,6 +39,7 @@
 
   &__cont {
     @include flex-column;
+    flex: 1;
     justify-content: space-between;
     gap: 24px;
     padding: 20px;
@@ -80,6 +81,7 @@
   @include tablet {
     min-width: 285px;
     max-width: 285px;
+
     &__img {
       height: 330px;
     }
@@ -88,6 +90,7 @@
   @include mobile {
     min-width: 260px;
     max-width: 260px;
+
     &__img {
       height: 300px;
     }

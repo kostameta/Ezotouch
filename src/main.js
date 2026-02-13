@@ -7,3 +7,4 @@ new OverlayMenu()
 
 import '@/modules/gsapScripts'
 import '@/modules/spaceSlider'
+import '@/modules/listCardsSlider'

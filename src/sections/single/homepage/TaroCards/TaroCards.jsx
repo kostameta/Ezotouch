@@ -51,21 +51,42 @@ export default () => {
               />
             </svg>
           </div>
-          <Card title="Таро уэйта" img="origin" origin>
-            Универсальная колода, который поможет вам быстро
-          </Card>
-          <Card title="Таро Эльфов" img="elf">
-            Авторская колода интуитивной практики, раскладов на отношения,
-            работу и личностное развитие
-          </Card>
-          <Card title="Вечная жизнь" img="infinity">
-            Авторская колода, рассчитаная на самостоятельную интерпретацию без
-            привязки к готовым трактовкам
-          </Card>
-          <Card title="Таро теней" img="shades">
-            Колода, исследующая скрытые стороны личности и подсознательные
-            процессы
-          </Card>
+          <div className="list-cards__slider">
+            <div className="list-cards__swiper swiper taro" data-list-cards>
+              <div className="swiper-wrapper">
+            <div className="swiper-slide">
+              <Card title="Таро уэйта" img="origin" origin>
+                Универсальная колода, которая поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="Королева видений" img="queen">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="Тайны арканов" img="arkan">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="Таро теней" img="shades">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+            <div className="swiper-slide">
+              <Card title="Таро черных ведьм" img="witch">
+                Универсальная колода, который поможет вам быстро освоить основы
+                раскладов
+              </Card>
+            </div>
+              </div>
+            </div>
+          </div>
         </div>
         <Button href="/deck-type/taro" className="btn-primary list-cards__btn">
           Посмотреть другие колоды

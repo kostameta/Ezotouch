@@ -1,17 +1,23 @@
 .list-cards {
-  overflow: hidden;
-
   &-top {
     .section-top__title {
       max-width: 840px;
     }
   }
 
-  &__w {
+  // :not(.swiper-wrapper) — чтобы не применять к wrapper, если на нём оставлен класс list-cards__w (напр. на проде)
+  &__w:not(.swiper-wrapper) {
     position: relative;
     display: flex;
     align-items: start;
     gap: 24px;
+    overflow: visible;
+  }
+
+  &__slider {
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
   }
 
   &__arrow {
@@ -47,11 +53,11 @@
     }
 
     &-prev {
-      left: -16px;
+      left: -23px;
     }
 
     &-next {
-      right: -16px;
+      right: -23px;
 
       svg {
         transform: rotate(180deg);
@@ -73,8 +79,29 @@
   }
 
   @include tablet {
-    &__w {
+    &__w:not(.swiper-wrapper) {
       flex-wrap: nowrap;
+    }
+  }
+
+  // Выравнивание высоты карточек в Swiper
+  &__slider .swiper {
+    width: 100%;
+
+    .swiper-wrapper {
+      align-items: stretch;
+      display: flex;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: stretch;
+      height: auto;
+
+      .card {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
