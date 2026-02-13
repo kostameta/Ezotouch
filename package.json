@@ -45,7 +45,8 @@
     "stylelint-config-standard-scss": "15.0.1",
     "stylelint-order": "7.0.0",
     "stylelint-scss": "6.12.1",
-    "stylelint-selector-bem-pattern": "4.0.1"
+    "stylelint-selector-bem-pattern": "4.0.1",
+    "typograf": "^7.6.0"
   },
   "dependencies": {
     "@a1rth/css-normalize": "1.2.1",
