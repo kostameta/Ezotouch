@@ -27,42 +27,42 @@ export default () => {
               <tr>
                 <td>0</td>
                 <td>
-                  <a href="/">Шут</a>
+                  <a href="/card">Шут</a>
                 </td>
                 <td>The FooL</td>
               </tr>
               <tr>
                 <td>0</td>
                 <td>
-                  <a href="/">Шут</a>
+                  <a href="/card">Шут</a>
                 </td>
                 <td>The FooL</td>
               </tr>
               <tr>
                 <td>0</td>
                 <td>
-                  <a href="/">Шут</a>
+                  <a href="/card">Шут</a>
                 </td>
                 <td>The FooL</td>
               </tr>
               <tr>
                 <td>0</td>
                 <td>
-                  <a href="/">Шут</a>
+                  <a href="/card">Шут</a>
                 </td>
                 <td>The FooL</td>
               </tr>
               <tr>
                 <td>0</td>
                 <td>
-                  <a href="/">Шут</a>
+                  <a href="/card">Шут</a>
                 </td>
                 <td>The FooL</td>
               </tr>
               <tr>
                 <td>0</td>
                 <td>
-                  <a href="/">Шут</a>
+                  <a href="/card">Шут</a>
                 </td>
                 <td>The FooL</td>
               </tr>

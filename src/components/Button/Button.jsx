@@ -7,7 +7,12 @@ export default (props) => {
 
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
-  const linkAttributes = { href }
+  const linkAttributes = {
+    href,
+    ...(typeof href === 'string' && href.startsWith('http')
+      ? { target: '_blank', rel: 'noopener noreferrer' }
+      : {}),
+  }
   const buttonAttributes = { type }
   const attributesByTag = isLink ? linkAttributes : buttonAttributes
   const hasIcon = name ? true : false

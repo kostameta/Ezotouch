@@ -3,7 +3,14 @@ import clsx from 'clsx'
 import './SectionTop.scss'
 
 export default (props) => {
-  const { className, title, btn = false, isPopup = false, children } = props
+  const {
+    className,
+    title,
+    btn = false,
+    btnHref = '/deck-type/taro',
+    isPopup = false,
+    children,
+  } = props
 
   return (
     <div className={clsx('section-top', className)}>
@@ -12,7 +19,7 @@ export default (props) => {
         <p className="section-top__text text-2">{children}</p>
         {btn && (
           <Button
-            href="/deck-type/taro"
+            href={btnHref}
             className="btn-primary section-top__btn"
           >
             {btn}
