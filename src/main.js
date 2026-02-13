@@ -5,3 +5,4 @@ import '@/modules/popup'
 new OverlayMenu()
 
 import '@/modules/gsapScripts'
+import '@/modules/spaceSlider'

@@ -9,39 +9,6 @@ export default () => {
         <div className="container">
           <div className="space__path"></div>
 
-          <div className="space__list">
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-1.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-2.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-3.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-4.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-5.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-6.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-7.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-8.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-9.png" />
-            </div>
-            <div className="space__card">
-              <Image src="/src/assets/images/homepage/space-card-10.png" />
-            </div>
-          </div>
-
           <div className="space__cont">
             <div className="space__cont-circ"></div>
             <h2>Найдите свой мир во&nbsp;вселенной EZOTOUCH</h2>
@@ -76,6 +43,41 @@ export default () => {
                 Перейти в Библиотеку Таро
               </Button>
               <Button className="space__btn">Перейти в библиотеку МАК</Button>
+            </div>
+          </div>
+
+          <div className="space__list swiper">
+            <div className="swiper-wrapper">
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-1.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-2.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-3.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-4.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-5.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-6.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-7.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-8.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-9.png" />
+              </div>
+              <div className="space__card swiper-slide">
+                <Image src="/src/assets/images/homepage/space-card-10.png" />
+              </div>
             </div>
           </div>
         </div>

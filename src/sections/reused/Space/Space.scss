@@ -31,6 +31,24 @@
       center / cover;
   }
 
+  &__list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &.swiper {
+      overflow: visible;
+    }
+
+    .swiper-wrapper {
+      position: static;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+  }
+
   &__card {
     position: absolute;
     width: 300px;
@@ -39,6 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
       display: block;
       object-fit: contain;
@@ -101,11 +120,88 @@
   }
 
   @include tablet {
+    padding: 80px 0 120px;
+
+    &__w {
+      aspect-ratio: auto;
+      max-height: none;
+      min-height: auto;
+    }
+
     &__path {
       display: none;
     }
+
     &__list {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 20px 0 60px;
+
+      &.swiper {
+        overflow: hidden;
+      }
+
+      .swiper-wrapper {
+        display: flex;
+        position: relative;
+        align-items: center;
+      }
+    }
+
+    &__card {
+      position: relative;
+      width: 308px;
+      height: 462px;
+      margin: 0;
+
+      &.swiper-slide {
+        width: 308px;
+        height: auto;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+      }
+
+      &.swiper-slide-active {
+        transform: translateY(60px);
+      }
+    }
+
+    &__cont {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    &__cont-circ {
       display: none;
+    }
+
+    &__list {
+      margin-top: 40px;
+    }
+  }
+
+  @include mobile {
+    &__card {
+      width: 264px;
+      height: 396px;
+
+      &.swiper-slide {
+        width: 264px;
+      }
+
+      &.swiper-slide-active {
+        transform: translateY(60px);
+      }
     }
   }
 }
