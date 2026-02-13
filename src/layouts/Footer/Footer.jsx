@@ -41,12 +41,14 @@ export default () => {
             </ul>
             <div className="footer__action">
               <Button
+                href="https://www.wildberries.ru/brands/312174691-ezotouch"
                 className="btn btn-marketplace white btn-marketplace-wb header__btn"
                 name="wb"
               >
                 Купить на
               </Button>
               <Button
+                href="https://www.ozon.ru/brand/ezotouch-101849711/?abt_att=1"
                 className="btn btn-marketplace white btn-marketplace-ozon header__btn"
                 name="ozon"
               >

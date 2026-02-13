@@ -23,10 +23,12 @@ export default (props) => {
           </Button>
           <div className="card__bottom">
             <Button
+              href="https://www.wildberries.ru/brands/312174691-ezotouch"
               className="btn btn-marketplace btn-marketplace-wb"
               name="wb"
             ></Button>
             <Button
+              href="https://www.ozon.ru/brand/ezotouch-101849711/?abt_att=1"
               className="btn btn-marketplace btn-marketplace-ozon"
               name="ozon"
             ></Button>
