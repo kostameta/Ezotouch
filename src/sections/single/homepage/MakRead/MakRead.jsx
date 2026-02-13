@@ -18,7 +18,7 @@ export default () => {
               <span className="mak-read-card__count">01</span>
               <Image
                 className="mak-read-card__icon"
-                src="/src/assets/images/main/star.png"
+                src="/src/assets/images/main/star.svg"
               />
             </div>
             <div className="mak-read-card__bottom">
@@ -45,7 +45,7 @@ export default () => {
             <div className="mak-read-card__top">
               <span className="mak-read-card__count">02</span>
               <Image
-                src="/src/assets/images/main/star.png"
+                src="/src/assets/images/main/star.svg"
                 className="mak-read-card__icon"
               />
             </div>
@@ -73,7 +73,7 @@ export default () => {
             <div className="mak-read-card__top">
               <span className="mak-read-card__count">03</span>
               <Image
-                src="/src/assets/images/main/star.png"
+                src="/src/assets/images/main/star.svg"
                 className="mak-read-card__icon"
               />
             </div>
@@ -101,7 +101,7 @@ export default () => {
             <div className="mak-read-card__top">
               <span className="mak-read-card__count">04</span>
               <Image
-                src="/src/assets/images/main/star.png"
+                src="/src/assets/images/main/star.svg"
                 className="mak-read-card__icon"
               />
             </div>

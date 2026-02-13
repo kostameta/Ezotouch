@@ -32,19 +32,19 @@ export default () => {
           <div className="open__right">
             <Image
               className="open__icon"
-              src="/src/assets/images/main/star.png"
+              src="/src/assets/images/main/star.svg"
             />
             <Image
               className="open__icon"
-              src="/src/assets/images/main/star.png"
+              src="/src/assets/images/main/star.svg"
             />
             <Image
               className="open__icon"
-              src="/src/assets/images/main/star.png"
+              src="/src/assets/images/main/star.svg"
             />
             <Image
               className="open__icon"
-              src="/src/assets/images/main/star.png"
+              src="/src/assets/images/main/star.svg"
             />
 
             <Image

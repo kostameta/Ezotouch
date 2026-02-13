@@ -78,19 +78,3 @@
     }
   }
 }
-
-// Выравнивание высоты карточек в Swiper
-.list-cards__w.swiper-wrapper {
-  align-items: stretch;
-}
-
-.list-cards__w .swiper-slide {
-  display: flex;
-  height: auto;
-}
-
-.list-cards__w .swiper-slide .card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}

@@ -17,7 +17,7 @@ export default () => {
               <div className="taro-card">
                 <Image
                   className="taro-card__img"
-                  src="/src/assets/images/main/star.png"
+                  src="/src/assets/images/main/star.svg"
                 />
                 <p className="taro-card__text">
                   Это диалог с собой через визуальные образы.
@@ -30,7 +30,7 @@ export default () => {
               <div className="taro-card">
                 <Image
                   className="taro-card__img"
-                  src="/src/assets/images/main/star.png"
+                  src="/src/assets/images/main/star.svg"
                 />
                 <p className="taro-card__text">
                   Это диалог с собой через визуальные образы.
@@ -43,7 +43,7 @@ export default () => {
               <div className="taro-card">
                 <Image
                   className="taro-card__img"
-                  src="/src/assets/images/main/star.png"
+                  src="/src/assets/images/main/star.svg"
                 />
                 <p className="taro-card__text">
                   Это диалог с собой через визуальные образы.
@@ -54,7 +54,10 @@ export default () => {
                 </p>
               </div>
             </div>
-            <Button href="/deck-type/taro" className="btn btn-primary taro__btn">
+            <Button
+              href="/deck-type/taro"
+              className="btn btn-primary taro__btn"
+            >
               Перейти в Библиотеку Таро
             </Button>
           </div>
