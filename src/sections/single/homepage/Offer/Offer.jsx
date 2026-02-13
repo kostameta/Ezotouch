@@ -21,10 +21,10 @@ export default () => {
             </p>
           </div>
           <div className="offer__action">
-            <Button href="/catalog-taro" className="btn btn-primary">
+            <Button href="/deck-type/taro" className="btn btn-primary">
               Выбрать колоду Таро
             </Button>
-            <Button href="/catalog-mak" className="btn">
+            <Button href="/deck-type/mak" className="btn">
               Выбрать колоду МАК
             </Button>
           </div>

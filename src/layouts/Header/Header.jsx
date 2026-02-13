@@ -10,11 +10,11 @@ export default (props) => {
   const menuItems = [
     {
       label: 'ТАРО',
-      href: '/catalog-taro',
+      href: '/deck-type/taro',
     },
     {
       label: 'МАК',
-      href: '/catalog-mak',
+      href: '/deck-type/mak',
     },
     {
       label: 'О нас',

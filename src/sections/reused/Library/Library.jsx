@@ -52,7 +52,7 @@ export default () => {
                 src="/src/assets/images/catalog-taro/taro-bg.png"
                 className="popup__img"
               />
-              <Button href="/catalog-taro" className="btn-primary popup__btn">
+              <Button href="/deck-type/taro" className="btn-primary popup__btn">
                 Перейти в библиотеку Таро
               </Button>
             </div>
@@ -62,7 +62,7 @@ export default () => {
                 src="/src/assets/images/catalog-mak/mak-bg.png"
                 className="popup__img"
               />
-              <Button href="/catalog-mak" className="btn-primary popup__btn">
+              <Button href="/deck-type/mak" className="btn-primary popup__btn">
                 Перейти в библиотеку Мак
               </Button>
             </div>

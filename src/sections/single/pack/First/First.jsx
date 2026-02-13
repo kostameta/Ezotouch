@@ -7,7 +7,7 @@ export default () => {
     <section className="first container" aria-labelledby="first-title">
       <div className="breadcrumbs">
         <a href="/"> Главная</a>
-        <a href="/catalog-taro">Библиотека Таро</a>
+        <a href="/deck-type/taro">Библиотека Таро</a>
         <span className="active">Таро Хроноса</span>
       </div>
       <div className="first__w">
