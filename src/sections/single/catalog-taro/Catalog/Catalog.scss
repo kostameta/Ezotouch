@@ -35,8 +35,19 @@
   padding: 20px 0;
 }
 
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  display: flex;
+  height: auto;
+}
+
 .swiper-slide .card {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 360px;
 }
