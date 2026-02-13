@@ -54,7 +54,7 @@ export default () => {
                 </p>
               </div>
             </div>
-            <Button className="btn btn-primary taro__btn">
+            <Button href="/deck-type/taro" className="btn btn-primary taro__btn">
               Перейти в Библиотеку Таро
             </Button>
           </div>

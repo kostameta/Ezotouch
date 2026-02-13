@@ -39,10 +39,10 @@ export default () => {
               </div>
             </div>
             <div className="space__action">
-              <Button className="btn-primary space__btn">
+              <Button href="/deck-type/taro" className="btn-primary space__btn">
                 Перейти в Библиотеку Таро
               </Button>
-              <Button className="space__btn">Перейти в библиотеку МАК</Button>
+              <Button href="/deck-type/mak" className="space__btn">Перейти в библиотеку МАК</Button>
             </div>
           </div>
 
