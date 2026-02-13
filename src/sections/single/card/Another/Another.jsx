@@ -1,13 +1,24 @@
 import SectionTop from '@/layouts/SectionTop'
 import './Another.scss'
 
-export default () => {
+/**
+ * @param {Object} props
+ * @param {string} [props.deckHref='/pack'] — ссылка на страницу колоды для кнопки «Вернуться в колоду»
+ * @param {{ num: number, title: string, url: string, original: string }[]} [props.tableRows=[]] — строки таблицы (карты колоды)
+ */
+export default ({ deckHref = '/pack', tableRows = [] }) => {
+  const rows =
+    tableRows.length > 0
+      ? tableRows
+      : [{ num: 0, title: 'Шут', url: '/card', original: 'The FooL' }]
+
   return (
     <section className="another" aria-labelledby="article-title">
       <div className="container">
         <SectionTop
           title="Следуй за энергией колоды"
-          btn="Вернутся в колоду"
+          btn="Вернуться в колоду"
+          btnHref={deckHref}
           className="another-top"
         >
           <span className="opa-6">
@@ -24,48 +35,15 @@ export default () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>0</td>
-                <td>
-                  <a href="/card">Шут</a>
-                </td>
-                <td>The FooL</td>
-              </tr>
-              <tr>
-                <td>0</td>
-                <td>
-                  <a href="/card">Шут</a>
-                </td>
-                <td>The FooL</td>
-              </tr>
-              <tr>
-                <td>0</td>
-                <td>
-                  <a href="/card">Шут</a>
-                </td>
-                <td>The FooL</td>
-              </tr>
-              <tr>
-                <td>0</td>
-                <td>
-                  <a href="/card">Шут</a>
-                </td>
-                <td>The FooL</td>
-              </tr>
-              <tr>
-                <td>0</td>
-                <td>
-                  <a href="/card">Шут</a>
-                </td>
-                <td>The FooL</td>
-              </tr>
-              <tr>
-                <td>0</td>
-                <td>
-                  <a href="/card">Шут</a>
-                </td>
-                <td>The FooL</td>
-              </tr>
+              {rows.map((row) => (
+                <tr key={row.num + (row.url || '')}>
+                  <td>{row.num}</td>
+                  <td>
+                    <a href={row.url}>{row.title}</a>
+                  </td>
+                  <td>{row.original}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

@@ -41,22 +41,36 @@ export default () => {
               />
             </svg>
           </div>
-          <Card title="Таро уэйта" img="origin" origin>
-            Универсальная колода, которая <br />
-            поможет вам быстро освоить основы раскладов
-          </Card>
-          <Card title="Таро Эльфов" img="elf">
-            Авторская колода интуитивной практики, раскладов на отношения,
-            работу и личностное развитие
-          </Card>
-          <Card title="Вечная жизнь" img="infinity">
-            Авторская колода, рассчитаная на самостоятельную интерпретацию без
-            привязки к готовым трактовкам
-          </Card>
-          <Card title="Таро теней" img="shades">
-            Колода, исследующая скрытые <br />
-            стороны личности и подсознательные процессы
-          </Card>
+          <div className="list-cards__slider">
+            <div className="list-cards__swiper swiper lovely" data-list-cards>
+              <div className="swiper-wrapper">
+                <div className="swiper-slide">
+                  <Card title="Таро уэйта" img="origin" origin>
+                    Универсальная колода, которая <br />
+                    поможет вам быстро освоить основы раскладов
+                  </Card>
+                </div>
+                <div className="swiper-slide">
+                  <Card title="Таро Эльфов" img="elf">
+                    Авторская колода интуитивной практики, раскладов на отношения,
+                    работу и личностное развитие
+                  </Card>
+                </div>
+                <div className="swiper-slide">
+                  <Card title="Вечная жизнь" img="infinity">
+                    Авторская колода, рассчитаная на самостоятельную интерпретацию без
+                    привязки к готовым трактовкам
+                  </Card>
+                </div>
+                <div className="swiper-slide">
+                  <Card title="Таро теней" img="shades">
+                    Колода, исследующая скрытые <br />
+                    стороны личности и подсознательные процессы
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
